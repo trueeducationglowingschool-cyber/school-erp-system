@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School ERP System</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">🎓</div>
+        <div>
+          <h1>School ERP</h1>
+          <span>Management System</span>
+        </div>
+      </div>
+      <nav id="nav">
+        <a href="#/dashboard" class="nav-item active" data-view="dashboard">📊 Dashboard</a>
+        <div class="nav-group">Academics</div>
+        <a href="#/students" class="nav-item" data-view="students">👨‍🎓 Students</a>
+        <a href="#/teachers" class="nav-item" data-view="teachers">👩‍🏫 Teachers</a>
+        <a href="#/courses" class="nav-item" data-view="courses">📚 Courses</a>
+        <a href="#/classes" class="nav-item" data-view="classes">🏫 Classes</a>
+        <a href="#/departments" class="nav-item" data-view="departments">🏛️ Departments</a>
+        <a href="#/attendance" class="nav-item" data-view="attendance">✅ Attendance</a>
+        <a href="#/grades" class="nav-item" data-view="grades">🏅 Grades</a>
+        <a href="#/enrollments" class="nav-item" data-view="enrollments">🔗 Enrollments</a>
+        <div class="nav-group">ERP</div>
+        <a href="#/invoices" class="nav-item" data-view="invoices">🧾 Fees & Invoices</a>
+        <a href="#/payments" class="nav-item" data-view="payments">💳 Payments</a>
+        <a href="#/payroll" class="nav-item" data-view="payroll">💰 Payroll</a>
+        <a href="#/inventory" class="nav-item" data-view="inventory">📦 Inventory</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h2 id="page-title">Dashboard</h2>
+        <div class="topbar-actions">
+          <span id="connection-badge" class="badge">● Connected</span>
+          <button id="refresh-btn" class="btn btn-ghost">↻ Refresh</button>
+        </div>
+      </header>
+      <div id="content" class="content">
+        <div class="loading">Loading…</div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal-overlay hidden">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modal-title">Form</h3>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+      <form id="modal-form" class="modal-body"></form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
