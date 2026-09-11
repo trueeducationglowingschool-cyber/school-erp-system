@@ -1,0 +1,21 @@
+{
+  "name": "school-erp-system",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-09-23",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "school-erp-db",
+      "database_id": "9852b7d0-11d0-4ed3-afba-28c3c02eca78",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "APP_NAME": "School ERP System"
+  }
+}
