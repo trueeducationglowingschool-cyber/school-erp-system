@@ -11,7 +11,7 @@
     {
       "binding": "DB",
       "database_name": "school-erp-db",
-      "database_id": "PLACEHOLDER_RUN_WRANGLER_D1_CREATE",
+      "database_id": "9852b7d0-11d0-4ed3-afba-28c3c02eca78",
       "migrations_dir": "migrations"
     }
   ],
